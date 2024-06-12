@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 
 export default function Home() {
-  const [iHear, setIhear] = useState(true);
-  const [audioCont, setAudioCont] = useState(null);
-  const [analyz, setAnalyz] = useState(null);
+  const [iHear, setIhear] = useState<boolean>(true);
+  const [audioCont, setAudioCont] = useState<AudioContext | null>(null);
+  const [analyz, setAnalyz] = useState<AnalyserNode | null>(null);
   // const [volumeNow, setVolume] = useState(0);
   const audioRef = useRef(null);
   let stream: any;
