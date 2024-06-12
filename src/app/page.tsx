@@ -8,7 +8,7 @@ export default function Home() {
   const [audioCont, setAudioCont] = useState<AudioContext | null>(null);
   const [analyz, setAnalyz] = useState<AnalyserNode | null>(null);
   // const [volumeNow, setVolume] = useState(0);
-  const audioRef = useRef(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   let stream: any;
 
   //ตรวจจับเสียง แปลงค่าเสียง เก็บค่าเสียง อัพเดทค่าเสียง
@@ -35,8 +35,7 @@ export default function Home() {
       audioRef.current.play();
     }
     if (!audioCont) {
-      const newAudioCont = new (window.AudioContext ||
-        window.webkitAudioContext)();
+      const newAudioCont = new window.AudioContext();
       setAudioCont(newAudioCont);
 
       stream = await navigator.mediaDevices.getUserMedia({ audio: true });
