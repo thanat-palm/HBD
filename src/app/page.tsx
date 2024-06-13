@@ -102,18 +102,18 @@ export default function Home() {
             ) : (
               <motion.div
               className="flex flex-col my-20 text-[30ypx] gap-10 sm:text-[40px] text-[#F0C2C2] "
-              // initial={{y:100 ,  opacity:0}}
-              // animate={{y:0 ,  opacity:1}}
-              // transition={{type:"spring" , duration: 0.4 , delay: 1}}
+              initial={{opacity:0}}
+              animate={{opacity:1}}
+              transition={{duration: 0.4 , delay: 0.5}}
             >
             <div className="w-full flex items-center gap-5 sm:gap-10">
               <motion.div 
-                className=""
+                className="size-fit"
                 variants={variantImg}
                 initial="left"  
                 whileInView="animate"
               >
-                <Image src="/1.jpg" alt="" priority width={400} height={400} className="drop-shadow-lg"/>
+                <Image src="/1.jpg" alt="" priority width={400} height={400} className="drop-shadow-lg object-contain w-fit h-[400px] sm:h-[500px]"/>
               </motion.div>
               <h1>HAPPY BIRTH DAY TO U MY LOVE</h1>
               <motion.div 
@@ -126,12 +126,12 @@ export default function Home() {
             <div className="w-full flex items-center gap-5 sm:gap-10 justify-end">
               <h1 className="ml-3">โตขึ้นอีกปีแล้วนะ</h1>
               <motion.div 
-                className=""
+                className="size-fit"
                 variants={variantImg}
                 initial="right"  
                 whileInView="animate"
               >
-                <Image src="/2.jpg" alt="" priority width={400} height={400} className="drop-shadow-lg"/>
+                <Image src="/2.jpg" alt="" priority width={400} height={400} className="drop-shadow-lg object-contain w-fit h-[400px] sm:h-[500px]"/>
               </motion.div> 
               <motion.div 
                 className="w-full absolute bg-white h-[300px] left-0 z-[-1] origin-left"
@@ -142,12 +142,12 @@ export default function Home() {
             </div>
             <div className="w-full flex items-center gap-5 sm:gap-10">
               <motion.div 
-                className=""
+                className="size-fit"
                 variants={variantImg}
                 initial="left"      
                 whileInView="animate"
               >
-                <Image src="/3.jpg" alt="" priority width={400} height={400} className="drop-shadow-lg"/>
+                <Image src="/3.jpg" alt="" priority width={400} height={400} className="drop-shadow-lg object-contain w-fit h-[400px] sm:h-[500px]"/>
               </motion.div>
               <h1>วันเกิดปีนี้มีความสุขมากๆนะ</h1>
               <motion.div 
@@ -161,12 +161,12 @@ export default function Home() {
             <div className="w-full flex items-center gap-5 sm:gap-10 justify-end">
               <h1 className="ml-3">อยู่ด้วยกันไปนานๆนะครับ</h1>
               <motion.div 
-                className=""
+                className="size-fit"
                 variants={variantImg}
                 initial="right"
                 whileInView="animate"
               >
-                <Image src="/4.jpg" alt="" priority width={400} height={400} className="drop-shadow-lg"/>
+                <Image src="/4.jpg" alt="" priority width={400} height={400} className="drop-shadow-lg object-contain w-fit h-[400px] sm:h-[500px]"/>
               </motion.div>
               <motion.div 
                 className="w-full absolute bg-white h-[300px] left-0 z-[-1] origin-left"
@@ -177,12 +177,12 @@ export default function Home() {
             </div>
             <div className="w-full flex items-center gap-3 sm:gap-10">
               <motion.div 
-                className=""
+                className="size-fit"
                 variants={variantImg}
                 initial="left"
                 whileInView="animate"
               >
-                <Image src="/5.jpg" alt="" priority width={400} height={400} className="drop-shadow-lg"/>
+                <Image src="/5.jpg" alt="" priority width={400} height={400} className="drop-shadow-lg object-contain w-fit h-[400px] sm:h-[500px]"/>
               </motion.div>
               <h1 >LOVE U FOREVER ❤❤❤</h1>
               <motion.div 
